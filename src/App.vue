@@ -4,6 +4,7 @@
         <div class="cont-wrapper">
           <side-nav class="side-cont" :style="{height: sideHeight + 'px'}"></side-nav>
           <Col span="20">
+            <tab-bar></tab-bar>
             <router-view class="view-cont"></router-view>
           </Col>
         </div>
@@ -15,9 +16,11 @@
 
 import Header from "./components/header";
 import SideNav from "./components/side-nav";
+import tabBar from "./components/tabBar";
+
 export default {
   name: "App",
-  components: {SideNav, Header},
+  components: {SideNav, Header, tabBar},
   data() {
     return {
       sideHeight: document.documentElement.clientHeight - 64,

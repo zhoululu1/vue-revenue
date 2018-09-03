@@ -30,18 +30,18 @@ export default {
     trigger: 'blur'
   },
   fullName: {
-    require: true,
+    required: true,
     message: '全称不能为空',
     trigger: 'blur'
   },
   ts: {
-    require: true,
+    required: true,
     message: '启动不能为空',
     trigger: 'blur'
   },
   code: {
-    trigger: 'change',
     required: true,
+    trigger: 'change',
     message: '请输入验证码',
   },
   ly: {

@@ -19,14 +19,14 @@
             </FormItem>
           </div>
           <div class="one-line-select">
-            <FormItem label="财务系统编码：" prop="revenueCode">
+            <FormItem label="财务系统编码:" prop="revenueCode">
               <Input v-model="formValidate.revenueCode" :rule="checking.revenueCode" placeholder="请输入财务系统编码"></Input>
             </FormItem>
             <FormItem label="公司简称" prop="name">
               <Input v-model="formValidate.name" :rule="checking.name" placeholder="公司简称"></Input>
             </FormItem>
-            <FormItem label="公司全称：" prop="fullName" >
-              <Input v-model="formValidate.fullName" :rule="checking.fullName" placeholder="请输入公司全称"></Input>
+            <FormItem label="公司全称：" prop="fullName">
+              <Input v-model="formValidate.fullName" placeholder="请输入公司全称" :rule="checking.fullName"></Input>
             </FormItem>
           </div>
           <div class="one-line-select">
@@ -72,7 +72,6 @@
     import checking from '../util/check';
 
     export default {
-      name: "add-law-person",
       data () {
         return {
           checking,
@@ -91,7 +90,6 @@
             area: ''
           },
           isShow:true
-
         }
       },
       methods: {
