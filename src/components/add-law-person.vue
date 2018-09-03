@@ -11,30 +11,30 @@
                 <Option value="shenzhen">3</Option>
               </Select>
             </FormItem>
-            <FormItem label="主数据编码：" prop="bm">
-              <Input v-model="formValidate.bm" placeholder="请输入你的编码"></Input>
+            <FormItem label="主数据编码：" prop="cDataCode">
+              <Input v-model="formValidate.cDataCode" placeholder="请输入你的编码"></Input>
             </FormItem>
             <FormItem label="交易方式编码：" prop="jybm">
               <Input v-model="formValidate.jybm" placeholder="请输入交易方式编码"></Input>
             </FormItem>
           </div>
           <div class="one-line-select">
-            <FormItem label="财务系统编码：" prop="city">
-              <Input v-model="formValidate.city" :rule="checking.city" placeholder="请输入财务系统编码"></Input>
+            <FormItem label="财务系统编码：" prop="revenueCode">
+              <Input v-model="formValidate.revenueCode" :rule="checking.revenueCode" placeholder="请输入财务系统编码"></Input>
             </FormItem>
             <FormItem label="公司简称" prop="name">
               <Input v-model="formValidate.name" :rule="checking.name" placeholder="公司简称"></Input>
             </FormItem>
-            <FormItem label="公司全称：" prop="qc" >
-              <Input v-model="formValidate.qc" :rule="checking.qc" placeholder="请输入公司全称"></Input>
+            <FormItem label="公司全称：" prop="fullName" >
+              <Input v-model="formValidate.fullName" :rule="checking.fullName" placeholder="请输入公司全称"></Input>
             </FormItem>
           </div>
           <div class="one-line-select">
             <FormItem label="国家：" prop="country">
               <Input v-model="formValidate.country" placeholder="请输入国家"></Input>
             </FormItem>
-            <FormItem label="地区" prop="aire">
-              <Input v-model="formValidate.aire" placeholder="请输入地区"></Input>
+            <FormItem label="地区" prop="area">
+              <Input v-model="formValidate.area" placeholder="请输入地区"></Input>
             </FormItem>
             <FormItem label="记账本位币：" prop="mo" >
               <Input v-model="formValidate.mo" placeholder="请输入记账本位币"></Input>
@@ -42,7 +42,7 @@
           </div>
           <div class="one-line-select">
             <FormItem label="记账本位币说明" prop="info">
-              <Input v-model="formValidate.name" placeholder="请输入"></Input>
+              <Input v-model="formValidate.info" placeholder="请输入"></Input>
             </FormItem>
 
             <FormItem label="启用" prop="ts">
@@ -79,14 +79,16 @@
           modal5: false,
           formValidate: {
             name: '',
-            mail: '',
-            city: '',
-            gender: '',
-            interest: [],
-            date: '',
-            time: '',
-            desc: '',
-            wayCode: '',
+            cDataCode: '',
+            revenueCode: '',
+            jybm: '',
+            fullName: '',
+            ts: '',
+            ly: '',
+            mo: '',
+            info: '',
+            country: '',
+            area: ''
           },
           isShow:true
 

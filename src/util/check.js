@@ -24,6 +24,21 @@ export default {
     required: true,
     message: '请输入联系人',
   },
+  name: {
+    required: true,
+    message: '姓名不能为空',
+    trigger: 'blur'
+  },
+  fullName: {
+    require: true,
+    message: '全称不能为空',
+    trigger: 'blur'
+  },
+  ts: {
+    require: true,
+    message: '启动不能为空',
+    trigger: 'blur'
+  },
   code: {
     trigger: 'change',
     required: true,
@@ -31,25 +46,11 @@ export default {
   },
   ly: {
     required: true,
+    message: '来源不能为空',
     trigger: 'change'
   },
-  city: [
-    { required: true, message: 'Please select the city', trigger: 'change' }
-  ],
-  mail: [
-    { required: true, message: 'Mailbox cannot be empty', trigger: 'blur' },
-    { type: 'email', message: 'Incorrect email format', trigger: 'blur' }
-  ],
-  name: {
-    required: true,
-    trigger: 'change'
-  },
-  qc: {
-    require: true,
-    trigger: 'change'
-  },
-  ts: {
-    require: true,
-    trigger: 'change'
-  }
+  revenueCode:
+    { required: true, message: '不能为空', trigger: 'blur' }
+  ,
+
 };
